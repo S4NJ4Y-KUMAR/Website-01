@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SQL Sleuth - Login</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="login-container">
+        <h1 class="title">PokéLogin</h1>
+       
+        <form action="/login" method="post">
+            <div class="input-container">
+                <label for="username">Trainer Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">PokéPassword:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login-button" type="submit">Catch 'em All</button>
+        </form>
+    </div>
+</body>
+</html>
