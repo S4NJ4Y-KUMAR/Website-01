@@ -42,5 +42,3 @@ def login():
 def flag():
     return render_template("flag.html")
 
-if __name__ == "__main__":
-    app.run(debug=True)
