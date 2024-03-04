@@ -36,7 +36,7 @@ def login():
     if user:
         return redirect(url_for("flag"))
     else:
-        return render_template("index.htmln", message="Invalid credentials")
+        return render_template("index.html", message="Invalid credentials")
 
 @app.route("/flag")
 def flag():
